@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class login {
    @RequestMapping("/login")
    public String  login( Model model, com.accp.springmvc1.entity.login login) {
+	   System.out.println("1211");
 	   model.addAttribute("login",login);
 	   return "/show.jsp";
    }
